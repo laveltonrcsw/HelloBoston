@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		202793D81598BA04005F551A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202793D71598BA04005F551A /* Foundation.framework */; };
+		202793DB1598BA04005F551A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 202793DA1598BA04005F551A /* main.m */; };
+		202793DF1598BA04005F551A /* HelloBoston.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 202793DE1598BA04005F551A /* HelloBoston.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		202793D11598BA04005F551A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				202793DF1598BA04005F551A /* HelloBoston.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		202793D31598BA04005F551A /* HelloBoston */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloBoston; sourceTree = BUILT_PRODUCTS_DIR; };
+		202793D71598BA04005F551A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		202793DA1598BA04005F551A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		202793DD1598BA04005F551A /* HelloBoston-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloBoston-Prefix.pch"; sourceTree = "<group>"; };
+		202793DE1598BA04005F551A /* HelloBoston.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloBoston.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		202793D01598BA04005F551A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202793D81598BA04005F551A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		202793C81598BA04005F551A = {
+			isa = PBXGroup;
+			children = (
+				202793D91598BA04005F551A /* HelloBoston */,
+				202793D61598BA04005F551A /* Frameworks */,
+				202793D41598BA04005F551A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		202793D41598BA04005F551A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				202793D31598BA04005F551A /* HelloBoston */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		202793D61598BA04005F551A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				202793D71598BA04005F551A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		202793D91598BA04005F551A /* HelloBoston */ = {
+			isa = PBXGroup;
+			children = (
+				202793DA1598BA04005F551A /* main.m */,
+				202793DE1598BA04005F551A /* HelloBoston.1 */,
+				202793DC1598BA04005F551A /* Supporting Files */,
+			);
+			path = HelloBoston;
+			sourceTree = "<group>";
+		};
+		202793DC1598BA04005F551A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				202793DD1598BA04005F551A /* HelloBoston-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		202793D21598BA04005F551A /* HelloBoston */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202793E21598BA04005F551A /* Build configuration list for PBXNativeTarget "HelloBoston" */;
+			buildPhases = (
+				202793CF1598BA04005F551A /* Sources */,
+				202793D01598BA04005F551A /* Frameworks */,
+				202793D11598BA04005F551A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloBoston;
+			productName = HelloBoston;
+			productReference = 202793D31598BA04005F551A /* HelloBoston */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		202793CA1598BA04005F551A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Rochee Software";
+			};
+			buildConfigurationList = 202793CD1598BA04005F551A /* Build configuration list for PBXProject "HelloBoston" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 202793C81598BA04005F551A;
+			productRefGroup = 202793D41598BA04005F551A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				202793D21598BA04005F551A /* HelloBoston */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		202793CF1598BA04005F551A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202793DB1598BA04005F551A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		202793E01598BA04005F551A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		202793E11598BA04005F551A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		202793E31598BA04005F551A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloBoston/HelloBoston-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		202793E41598BA04005F551A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloBoston/HelloBoston-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		202793CD1598BA04005F551A /* Build configuration list for PBXProject "HelloBoston" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202793E01598BA04005F551A /* Debug */,
+				202793E11598BA04005F551A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		202793E21598BA04005F551A /* Build configuration list for PBXNativeTarget "HelloBoston" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202793E31598BA04005F551A /* Debug */,
+				202793E41598BA04005F551A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 202793CA1598BA04005F551A /* Project object */;
+}
