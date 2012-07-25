@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201D560E159E91E60072F4E4 /* rswcommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 201D560D159E91E60072F4E4 /* rswcommon.m */; };
 		202793D81598BA04005F551A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202793D71598BA04005F551A /* Foundation.framework */; };
-		202793DB1598BA04005F551A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 202793DA1598BA04005F551A /* main.m */; };
 		202793DF1598BA04005F551A /* HelloBoston.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 202793DE1598BA04005F551A /* HelloBoston.1 */; };
+		20D093E415ADCE6E00A1AC9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D093E615ADCE6E00A1AC9E /* main.m */; };
+		20D093E915ADCE7D00A1AC9E /* rswcommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D093EB15ADCE7D00A1AC9E /* rswcommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,13 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		201D560C159E91E60072F4E4 /* rswcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rswcommon.h; path = "../../../GENERAL STUFF/rswcommon.h"; sourceTree = "<group>"; };
-		201D560D159E91E60072F4E4 /* rswcommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = rswcommon.m; path = "../../../GENERAL STUFF/rswcommon.m"; sourceTree = "<group>"; };
 		202793D31598BA04005F551A /* HelloBoston */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloBoston; sourceTree = BUILT_PRODUCTS_DIR; };
 		202793D71598BA04005F551A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		202793DA1598BA04005F551A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		202793DD1598BA04005F551A /* HelloBoston-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloBoston-Prefix.pch"; sourceTree = "<group>"; };
 		202793DE1598BA04005F551A /* HelloBoston.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloBoston.1; sourceTree = "<group>"; };
+		20D093E515ADCE6E00A1AC9E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/main.m; sourceTree = "<group>"; };
+		20D093E715ADCE7300A1AC9E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/rswcommon.h; sourceTree = "<group>"; };
+		20D093EA15ADCE7D00A1AC9E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/rswcommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +76,7 @@
 		202793D91598BA04005F551A /* HelloBoston */ = {
 			isa = PBXGroup;
 			children = (
-				201D560C159E91E60072F4E4 /* rswcommon.h */,
-				201D560D159E91E60072F4E4 /* rswcommon.m */,
-				202793DA1598BA04005F551A /* main.m */,
+				20D093E615ADCE6E00A1AC9E /* main.m */,
 				202793DE1598BA04005F551A /* HelloBoston.1 */,
 				202793DC1598BA04005F551A /* Supporting Files */,
 			);
@@ -88,6 +86,8 @@
 		202793DC1598BA04005F551A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				20D093E815ADCE7300A1AC9E /* rswcommon.h */,
+				20D093EB15ADCE7D00A1AC9E /* rswcommon.m */,
 				202793DD1598BA04005F551A /* HelloBoston-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -144,12 +144,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202793DB1598BA04005F551A /* main.m in Sources */,
-				201D560E159E91E60072F4E4 /* rswcommon.m in Sources */,
+				20D093E415ADCE6E00A1AC9E /* main.m in Sources */,
+				20D093E915ADCE7D00A1AC9E /* rswcommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20D093E615ADCE6E00A1AC9E /* main.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D093E515ADCE6E00A1AC9E /* en */,
+			);
+			name = main.m;
+			sourceTree = "<group>";
+		};
+		20D093E815ADCE7300A1AC9E /* rswcommon.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D093E715ADCE7300A1AC9E /* en */,
+			);
+			name = rswcommon.h;
+			sourceTree = "<group>";
+		};
+		20D093EB15ADCE7D00A1AC9E /* rswcommon.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D093EA15ADCE7D00A1AC9E /* en */,
+			);
+			name = rswcommon.m;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		202793E01598BA04005F551A /* Debug */ = {
