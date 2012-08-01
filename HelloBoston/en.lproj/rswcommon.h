@@ -11,12 +11,12 @@
 
 #define	VERSION		"1.00"
 
-#define	ERR_FATAL	0		// exit the entire application with a popup window
-#define	ERR_DROP	1		// print to console and disconnect from application
-#define	ERR_QUIT	2		// not an error, just a normal exit
+#define	ERR_FATAL	0		//Exit The Entire Application With A Popup Window
+#define	ERR_DROP	1		//Print To Console And Disconnect From Application
+#define	ERR_QUIT	2		//Not An Error, Just A Normal Exit
 
 #define	PRINT_ALL		0
-#define PRINT_DEVELOPER	1	// only print when "developer 1"
+#define PRINT_DEVELOPER	1	//Only Print When "Developer 1"
 
 void NSPrint (NSString *format, ...);
 

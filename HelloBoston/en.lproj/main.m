@@ -152,12 +152,7 @@ int main (int argc, const char * argv[])
         
         //Print RSWCommon Header File Version Number
         NSPrint(@"RSWCommon Version: %s\n",VERSION);
-        
-        //NSPrint(@"Hello World\n");
-        NSPrint(@"Hello %@ %@\n", @"World", @"2012");
-        
-        // New File
-        
+
         //[myFraction release];
         //[myFrac1 release];
         //[myFrac2 release];
