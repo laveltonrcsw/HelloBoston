@@ -11,18 +11,18 @@
 
 int main (int argc, const char * argv[])
 {
-    @autoreleasepool 
+    @autoreleasepool
     {
         //NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
         //myFraction = [Fraction alloc];
         //myFraction = [myFraction init];
         //myFraction = [[Fraction alloc] init];
         //Fraction *myFraction = [[Fraction alloc] init];
-        
+
         Fraction *myFraction = [[Fraction alloc] init];
         Fraction *myFrac1 = [Fraction new]; //Skip extra typing of alloc & init.
         Fraction *myFrac2 = [Fraction new]; //Skip extra typing of alloc & init.
-        
+
         int value1, value2, sum, inum, idenom, ival;
         int integerVar = 100;
         float floatingVar = 331.79;
@@ -45,29 +45,29 @@ int main (int argc, const char * argv[])
         int i1, i2 = -150;
         int n, triangularNumber;
         triangularNumber = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8;
-        
+
         NSArray *arcodes = [[NSArray alloc] initWithObjects:@"FS1",@"FS2",@"FS3",@"FS4",@"FS5",nil];
         NSString *strParts = @"PS1|PS2|PS3|FS4";
         NSArray *arparts = [NSArray new];
-        
+
         arparts = [strParts componentsSeparatedByString:@"|"];
-        
+
         [myFraction setNumerator: 1];
         [myFraction setDenominator: 3];
-        
+
         [myFrac1 setNumerator: 2];
         [myFrac1 setDenominator: 3];
-        
+
         [myFrac2 setNumerator: 3];
         [myFrac2 setDenominator: 7];
-        
+
         value1 = 50;
         value2 = 25;
         sum = value1+value2;
         inum = 1;
         idenom = 3;
         ival = 1;
-        
+
         NSPrint(@"Ex. 1 - Hello, Boston!\n");
         NSPrint(@"Ex. 2 - The sum of 50 and 25 is %i\n",sum);
         NSPrint(@"Ex. 3 - The sum of %i and %i is %i\n",value1, value2, sum);
@@ -112,14 +112,14 @@ int main (int argc, const char * argv[])
         f2 = (float) i2 / 100; // type cast operator
         NSPrint(@"Ex. 24 - (float) %i divided by 100 produces %f\n", i2, f2);
         NSPrint(@"Ex. 25 - The eighth triangular number is %i\n", triangularNumber);
-        
+
         triangularNumber = 0;
         for ( n = 1; n <= 200; n += 1 )
         {
             triangularNumber += n;
         }
         NSPrint(@"Ex. 26 - The 200th triangular number is %i\n", triangularNumber);
-        
+
         NSPrint(@"Ex. 27 - TABLE OF TRIANGULAR NUMBERS\n");
         NSPrint(@" n  Sum from 1 to n\n");
         NSPrint(@"--- ---------------\n");
@@ -131,7 +131,7 @@ int main (int argc, const char * argv[])
             NSPrint(@" %-3i     %-3i\n", n, triangularNumber);
             n+=1;
         }
-        
+
         //Print The ARCodes Array
         ival = 0;
         NSPrint(@"ARCodes Count: %lu\n",[arcodes count]);
@@ -140,23 +140,23 @@ int main (int argc, const char * argv[])
             NSPrint(@"%@\n",[arcodes objectAtIndex:ival]);
             ival+=1;
         }
-        
+
         //Print The ARParts Array
         ival = 0;
         NSPrint(@"ARParts Count: %lu\n",[arparts count]);
-        do 
+        do
         {
             NSPrint(@"%@\n",[arparts objectAtIndex:ival]);
             ival+=1;
         } while (ival < [arparts count]);
-        
+
         //Print RSWCommon Header File Version Number
         NSPrint(@"RSWCommon Version: %s\n",VERSION);
 
         //[myFraction release];
         //[myFrac1 release];
         //[myFrac2 release];
-        
+
         //[pool drain];
     }
     return 0;

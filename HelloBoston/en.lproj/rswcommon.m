@@ -1,6 +1,6 @@
 //
 //  rswcommon.m
-//  
+//
 //
 //  Created by LaVelton Carroway on 3/6/12.
 //  Copyright (c) 2012 Rochee Software. All rights reserved.
@@ -14,7 +14,7 @@
 @implementation Fraction: NSObject
 -(void) print
 {
-NSPrint(@"%i/%i\n", numerator, denominator);
+    NSPrint(@"%i/%i\n", numerator, denominator);
 }
 
 -(void) setNumerator: (int) n
@@ -34,8 +34,6 @@ NSPrint(@"%i/%i\n", numerator, denominator);
 {
     return denominator;
 }
-@end
-
 void NSPrint (NSString *format, ...)
 {
     va_list argList; //Hold Information About Variable Arguments
@@ -44,3 +42,10 @@ void NSPrint (NSString *format, ...)
     [content writeToFile: @"/dev/stdout" atomically: NO encoding:NSUTF8StringEncoding error:nil];
     va_end(argList); //End Using Variable Argument List (macro)
 }
+-(NSString *)fileToString:(NSString *) filename
+{
+    NSString *result = @"This is a test function.";
+    return result;
+}
+@end
+
