@@ -1,4 +1,5 @@
- # files created by Xcode 3 or later
+# FILES CREATED BY XCODE 3 OR LATER #
+#####################################
 *.pbxuser
 *.mode1
 *.mode1v3
@@ -6,15 +7,18 @@
 *.perspectivev3
 *.xcclassmodel/
 
-# files created by Xcode 4 or later
+# FILES CREATED BY XCODE 4 OR LATER #
+#####################################
 xcuserdata/
 
-# build products
+# BUILD PRODUCTS #
+##################
 *.build/
 build/
 DerivedData/
 
-# Misc
+# MISC #
+########
 .svn
 .DS_Store
 .ds_store
