@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "rswcommon.h"
 
 int main (int argc, const char * argv[])
@@ -49,8 +50,11 @@ int main (int argc, const char * argv[])
         NSArray *arcodes = [[NSArray alloc] initWithObjects:@"FS1",@"FS2",@"FS3",@"FS4",@"FS5",nil];
         NSString *strParts = @"PS1|PS2|PS3|FS4";
         NSArray *arparts = [NSArray new];
-
         arparts = [strParts componentsSeparatedByString:@"|"];
+
+        NSArray *asciitable = [[NSArray alloc] initWithObjects:@" ",@"!",@"\"",@"#",@"$",@"%",@"&",@"`",@"(",@")",@"*",@"+",@",",@"_",@".",@"/",@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@":",@";",@"<",@"=",@">",@"?",@"@",@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z",@"[",@"\\",@"]",@"^",@"-",@"'",@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i",@"j",@"k",@"l",@"m",@"n",@"o",@"p",@"q",@"r",@"s",@"t",@"u",@"v",@"w",@"x",@"y",@"z",@"{",@"|",@"}",@"~",nil];
+
+        NSArray *hextable = [[NSArray alloc] initWithObjects:@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"2A",@"2B",@"2C",@"2D",@"2E",@"2F",@"30",@"31",@"32",@"33",@"34",@"35",@"36",@"37",@"38",@"39",@"3A",@"3B",@"3C",@"3D",@"3E",@"3F",@"40",@"41",@"42",@"43",@"44",@"45",@"46",@"47",@"48",@"49",@"4A",@"4B",@"4C",@"4D",@"4E",@"4F",@"50",@"51",@"52",@"53",@"54",@"55",@"56",@"57",@"58",@"59",@"5A",@"5B",@"5C",@"5D",@"5E",@"5F",@"60",@"61",@"62",@"63",@"64",@"65",@"66",@"67",@"68",@"69",@"6A",@"6B",@"6C",@"6D",@"6E",@"6F",@"70",@"71",@"72",@"73",@"74",@"75",@"76",@"77",@"78",@"79",@"7A",@"7B",@"7C",@"7D",@"7E",nil];
 
         [myFraction setNumerator: 1];
         [myFraction setDenominator: 3];
@@ -114,7 +118,7 @@ int main (int argc, const char * argv[])
         NSPrint(@"Ex. 25 - The eighth triangular number is %i\n", triangularNumber);
 
         triangularNumber = 0;
-        for ( n = 1; n <= 200; n += 1 )
+        for ( n = 1; n <= 200; n += ival )
         {
             triangularNumber += n;
         }
@@ -153,12 +157,36 @@ int main (int argc, const char * argv[])
         //Print RSWCommon Header File Version Number
         NSPrint(@"RSWCommon Version: %s\n",VERSION);
 
+        //Print The Ascii Table Array
+        ival = 0;
+        NSPrint(@"Ascii Table Count: %lu\n",[asciitable count]);
+        for (id asciitableElement in asciitable)
+        {
+            NSPrint(@"%@\n",[asciitable objectAtIndex:ival]);
+            ival+=1;
+        }
+
+        //Print The Hex Table Array
+        ival = 0;
+        NSPrint(@"Hex Table Count: %lu\n",[hextable count]);
+        for (id hextableElement in hextable)
+        {
+            NSPrint(@"%@\n",[hextable objectAtIndex:ival]);
+            ival+=1;
+        }
+
+
         //[myFraction release];
         //[myFrac1 release];
         //[myFrac2 release];
-
         //[pool drain];
     }
     return 0;
 }
+
+
+
+
+
+
 

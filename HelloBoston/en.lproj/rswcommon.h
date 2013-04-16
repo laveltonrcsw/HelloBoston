@@ -30,6 +30,10 @@
 #define HEIGHT_IPAD 768
 #define HEIGHT_IPHONE 320
 
+enum roman_numerals { I = 1, II = 2, III = 3, IV = 4, V = 5, VI = 6, VII = 7, VIII = 8, IX = 9, X = 10, L = 50, C = 100, D = 500, M = 1000 };
+enum curr_month { January = 1, February = 2, March = 3, April = 4, May = 5, June = 6, July = 7, August = 8, September = 9, October = 10, November = 11, December = 12 };
+enum curr_day { Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6, Sunday = 7 };
+
 @interface rswcommon: NSObject
 {
 }
@@ -45,6 +49,8 @@
 -(void) setDenominator: (int) d;
 -(int) numerator;
 -(int) denominator;
+-(NSString *) hexToAscii: (NSString *) keyString;
+-(NSString *) fileToString: (NSString *) filename;
 void NSPrint (NSString *format, ...);
--(NSString *)fileToString:(NSString *) filename;
+
 @end
