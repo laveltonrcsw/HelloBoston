@@ -7,8 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#include "rswcommon.h"
+#include "cuda.h"
+#include "cuda_runtime.h"
 
-#import "rswcommon.h"
+#ifdef __APPLE__
+    #include <OpenGL/gl.h>  // Open Graphics Library (OpenGL) header
+    #include <GLUT/glut.h>  // The GL Utility Toolkit (GLUT) Header
+#else
+    #include <GL/gl.h>      // Open Graphics Library (OpenGL) header
+    #include <GL/glut.h>    // The GL Utility Toolkit (GLUT) Header
+#endif
 
 int main (int argc, const char * argv[])
 {
@@ -175,6 +184,13 @@ int main (int argc, const char * argv[])
             ival+=1;
         }
 
+        //Round Some Random Numbers
+        NSPrint(@"Round Labor Hours: %f\n",round(2.0f * 0.50) / 2.0f);
+        NSPrint(@"Round Labor Hours: %d\n",lround(0.50));
+
+
+        //OpenGL Test Sample
+        
 
         //[myFraction release];
         //[myFrac1 release];
