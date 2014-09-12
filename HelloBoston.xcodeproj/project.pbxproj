@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		202793D81598BA04005F551A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202793D71598BA04005F551A /* Foundation.framework */; };
 		202793DF1598BA04005F551A /* HelloBoston.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 202793DE1598BA04005F551A /* HelloBoston.1 */; };
+		204F396119364A330021853E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204F396019364A330021853E /* WebKit.framework */; };
+		204F396819364B100021853E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204F396719364B100021853E /* CoreFoundation.framework */; };
 		205A4E2717B3EB4C0032C3C9 /* CUDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A4E2617B3EB4C0032C3C9 /* CUDA.framework */; };
 		205A4E2917B43E880032C3C9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A4E2817B43E880032C3C9 /* GLUT.framework */; };
+		209F311E19363A9100541ABB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209F311D19363A9100541ABB /* Cocoa.framework */; };
+		209F312019363A9D00541ABB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209F311F19363A9D00541ABB /* AppKit.framework */; };
+		209F312219363AAE00541ABB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209F312119363AAE00541ABB /* CoreData.framework */; };
+		209F3159193645E100541ABB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209F3158193645E100541ABB /* OpenGL.framework */; };
 		20D093E415ADCE6E00A1AC9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D093E615ADCE6E00A1AC9E /* main.m */; };
 		20D093E915ADCE7D00A1AC9E /* rswcommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D093EB15ADCE7D00A1AC9E /* rswcommon.m */; };
 /* End PBXBuildFile section */
@@ -33,11 +39,59 @@
 		202793D71598BA04005F551A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		202793DD1598BA04005F551A /* HelloBoston-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloBoston-Prefix.pch"; sourceTree = "<group>"; };
 		202793DE1598BA04005F551A /* HelloBoston.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloBoston.1; sourceTree = "<group>"; };
+		204F396019364A330021853E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		204F396219364A9A0021853E /* WebBrowserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserAppDelegate.h; sourceTree = "<group>"; };
+		204F396319364A9A0021853E /* WebBrowserAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserAppDelegate.m; sourceTree = "<group>"; };
+		204F396619364AAC0021853E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/WebBrowser.xib; sourceTree = "<group>"; };
+		204F396719364B100021853E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		204F396919364B380021853E /* RandNumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandNumb.m; sourceTree = "<group>"; };
+		20504F3F1911EDB500679218 /* hyunvis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hyunvis.c; sourceTree = "<group>"; };
 		205A4E2617B3EB4C0032C3C9 /* CUDA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUDA.framework; path = /Library/Frameworks/CUDA.framework; sourceTree = "<absolute>"; };
 		205A4E2817B43E880032C3C9 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		209F311919363A3100541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/BeepController.xib; sourceTree = "<group>"; };
+		209F311A19363A3C00541ABB /* BeepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeepController.h; sourceTree = "<group>"; };
+		209F311B19363A3C00541ABB /* BeepController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeepController.m; sourceTree = "<group>"; };
+		209F311D19363A9100541ABB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		209F311F19363A9D00541ABB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		209F312119363AAE00541ABB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		209F312519363C7200541ABB /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = ../../../../../../Library/Frameworks/MacRuby.framework; sourceTree = "<group>"; };
+		209F312819363D6500541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/BuckTown.xib; sourceTree = "<group>"; };
+		209F312A19363D6D00541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		209F312B19363D7900541ABB /* BuckTownAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuckTownAppDelegate.h; sourceTree = "<group>"; };
+		209F312C19363D7900541ABB /* BuckTownAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuckTownAppDelegate.m; sourceTree = "<group>"; };
+		209F312F19363E9700541ABB /* CallTrak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallTrak.xcdatamodel; sourceTree = "<group>"; };
+		209F313019363E9700541ABB /* CallTrakAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallTrakAppDelegate.h; sourceTree = "<group>"; };
+		209F313119363E9700541ABB /* CallTrakAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallTrakAppDelegate.m; sourceTree = "<group>"; };
+		209F31341936404F00541ABB /* Cash34NumAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cash34NumAppDelegate.h; sourceTree = "<group>"; };
+		209F31351936404F00541ABB /* Cash34NumAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cash34NumAppDelegate.m; sourceTree = "<group>"; };
+		209F31381936407B00541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/CallTrak.xib; sourceTree = "<group>"; };
+		209F313A1936407B00541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/Cash34Num.xib; sourceTree = "<group>"; };
+		209F31401936425600541ABB /* OpenWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenWorld.xcdatamodel; sourceTree = "<group>"; };
+		209F31411936425600541ABB /* OpenWorldAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWorldAppDelegate.h; sourceTree = "<group>"; };
+		209F31421936425600541ABB /* OpenWorldAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWorldAppDelegate.m; sourceTree = "<group>"; };
+		209F31461936433000541ABB /* RightThurAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightThurAppDelegate.h; sourceTree = "<group>"; };
+		209F31471936433000541ABB /* RightThurAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightThurAppDelegate.m; sourceTree = "<group>"; };
+		209F314A1936435600541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/OpenHouse.xib; sourceTree = "<group>"; };
+		209F314C1936435600541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/OpenWorld.xib; sourceTree = "<group>"; };
+		209F314E1936435600541ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HelloBoston/en.lproj/RightThur.xib; sourceTree = "<group>"; };
+		209F314F1936442B00541ABB /* largeordersurcharge_info.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = largeordersurcharge_info.pdf; sourceTree = "<group>"; };
+		209F31501936442B00541ABB /* Sharebuilder Cost Calculation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sharebuilder Cost Calculation.txt"; sourceTree = "<group>"; };
+		209F31521936444D00541ABB /* calc_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calc_32.png; sourceTree = "<group>"; };
+		209F31531936444D00541ABB /* docs_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = docs_32.png; sourceTree = "<group>"; };
+		209F31541936444D00541ABB /* helpicontransp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpicontransp.png; sourceTree = "<group>"; };
+		209F31551936444D00541ABB /* openhouse.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = openhouse.icns; sourceTree = "<group>"; };
+		209F31561936444D00541ABB /* openhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openhouse.png; sourceTree = "<group>"; };
+		209F31571936444D00541ABB /* realtimequote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realtimequote.png; sourceTree = "<group>"; };
+		209F3158193645E100541ABB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		209F315A1936462400541ABB /* teapots.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = teapots.c; sourceTree = "<group>"; };
+		209F315C1936489600541ABB /* HelloRedCup_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HelloRedCup_main.c; sourceTree = "<group>"; };
+		209F315D1936489600541ABB /* HelloRedCup_rswutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloRedCup_rswutil.h; sourceTree = "<group>"; };
 		20D093E515ADCE6E00A1AC9E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/main.m; sourceTree = "<group>"; };
 		20D093E715ADCE7300A1AC9E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/rswcommon.h; sourceTree = "<group>"; };
 		20D093EA15ADCE7D00A1AC9E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/rswcommon.m; sourceTree = "<group>"; };
+		20D9C4BC19346F1A00EE6512 /* JANSLogHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JANSLogHack.m; sourceTree = "<group>"; };
+		20D9C4BE19346FB800EE6512 /* main.m.001.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.m.001.txt; sourceTree = "<group>"; };
+		20D9C4BF19346FB800EE6512 /* main.m.002.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.m.002.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +99,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205A4E2917B43E880032C3C9 /* GLUT.framework in Frameworks */,
+				204F396819364B100021853E /* CoreFoundation.framework in Frameworks */,
+				204F396119364A330021853E /* WebKit.framework in Frameworks */,
+				209F3159193645E100541ABB /* OpenGL.framework in Frameworks */,
+				209F312219363AAE00541ABB /* CoreData.framework in Frameworks */,
+				209F312019363A9D00541ABB /* AppKit.framework in Frameworks */,
+				209F311E19363A9100541ABB /* Cocoa.framework in Frameworks */,
 				205A4E2717B3EB4C0032C3C9 /* CUDA.framework in Frameworks */,
 				202793D81598BA04005F551A /* Foundation.framework in Frameworks */,
+				205A4E2917B43E880032C3C9 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +134,16 @@
 		202793D61598BA04005F551A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				205A4E2817B43E880032C3C9 /* GLUT.framework */,
+				204F396719364B100021853E /* CoreFoundation.framework */,
+				204F396019364A330021853E /* WebKit.framework */,
+				209F3158193645E100541ABB /* OpenGL.framework */,
+				209F312519363C7200541ABB /* MacRuby.framework */,
+				209F312119363AAE00541ABB /* CoreData.framework */,
+				209F311F19363A9D00541ABB /* AppKit.framework */,
+				209F311D19363A9100541ABB /* Cocoa.framework */,
 				205A4E2617B3EB4C0032C3C9 /* CUDA.framework */,
 				202793D71598BA04005F551A /* Foundation.framework */,
+				205A4E2817B43E880032C3C9 /* GLUT.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,8 +152,13 @@
 			isa = PBXGroup;
 			children = (
 				20D093E615ADCE6E00A1AC9E /* main.m */,
-				202793DE1598BA04005F551A /* HelloBoston.1 */,
+				20D093E815ADCE7300A1AC9E /* rswcommon.h */,
+				20D093EB15ADCE7D00A1AC9E /* rswcommon.m */,
+				209F3117193639FD00541ABB /* Classes */,
+				209F3116193639BC00541ABB /* Resources */,
 				202793DC1598BA04005F551A /* Supporting Files */,
+				209F31511936444D00541ABB /* Graphics */,
+				20504F411911EDCE00679218 /* Others */,
 			);
 			path = HelloBoston;
 			sourceTree = "<group>";
@@ -94,11 +166,80 @@
 		202793DC1598BA04005F551A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				209F312E19363E9700541ABB /* CallTrak.xcdatamodeld */,
 				202793DD1598BA04005F551A /* HelloBoston-Prefix.pch */,
-				20D093E815ADCE7300A1AC9E /* rswcommon.h */,
-				20D093EB15ADCE7D00A1AC9E /* rswcommon.m */,
+				202793DE1598BA04005F551A /* HelloBoston.1 */,
+				209F313F1936425600541ABB /* OpenWorld.xcdatamodeld */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20504F411911EDCE00679218 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				209F312919363D6D00541ABB /* Credits.rtf */,
+				209F314F1936442B00541ABB /* largeordersurcharge_info.pdf */,
+				20D9C4BE19346FB800EE6512 /* main.m.001.txt */,
+				20D9C4BF19346FB800EE6512 /* main.m.002.txt */,
+				209F31501936442B00541ABB /* Sharebuilder Cost Calculation.txt */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		209F3116193639BC00541ABB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				209F311819363A3100541ABB /* BeepController.xib */,
+				209F312719363D6500541ABB /* BuckTown.xib */,
+				209F31371936407B00541ABB /* CallTrak.xib */,
+				209F31391936407B00541ABB /* Cash34Num.xib */,
+				209F31491936435600541ABB /* OpenHouse.xib */,
+				209F314B1936435600541ABB /* OpenWorld.xib */,
+				209F314D1936435600541ABB /* RightThur.xib */,
+				204F396519364AAC0021853E /* WebBrowser.xib */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		209F3117193639FD00541ABB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				209F311A19363A3C00541ABB /* BeepController.h */,
+				209F311B19363A3C00541ABB /* BeepController.m */,
+				209F312B19363D7900541ABB /* BuckTownAppDelegate.h */,
+				209F312C19363D7900541ABB /* BuckTownAppDelegate.m */,
+				209F313019363E9700541ABB /* CallTrakAppDelegate.h */,
+				209F313119363E9700541ABB /* CallTrakAppDelegate.m */,
+				209F31341936404F00541ABB /* Cash34NumAppDelegate.h */,
+				209F31351936404F00541ABB /* Cash34NumAppDelegate.m */,
+				209F315C1936489600541ABB /* HelloRedCup_main.c */,
+				209F315D1936489600541ABB /* HelloRedCup_rswutil.h */,
+				20504F3F1911EDB500679218 /* hyunvis.c */,
+				20D9C4BC19346F1A00EE6512 /* JANSLogHack.m */,
+				209F31411936425600541ABB /* OpenWorldAppDelegate.h */,
+				209F31421936425600541ABB /* OpenWorldAppDelegate.m */,
+				204F396919364B380021853E /* RandNumb.m */,
+				209F31461936433000541ABB /* RightThurAppDelegate.h */,
+				209F31471936433000541ABB /* RightThurAppDelegate.m */,
+				209F315A1936462400541ABB /* teapots.c */,
+				204F396219364A9A0021853E /* WebBrowserAppDelegate.h */,
+				204F396319364A9A0021853E /* WebBrowserAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		209F31511936444D00541ABB /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				209F31521936444D00541ABB /* calc_32.png */,
+				209F31531936444D00541ABB /* docs_32.png */,
+				209F31541936444D00541ABB /* helpicontransp.png */,
+				209F31551936444D00541ABB /* openhouse.icns */,
+				209F31561936444D00541ABB /* openhouse.png */,
+				209F31571936444D00541ABB /* realtimequote.png */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +301,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		204F396519364AAC0021853E /* WebBrowser.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204F396619364AAC0021853E /* en */,
+			);
+			name = WebBrowser.xib;
+			sourceTree = "<group>";
+		};
+		209F311819363A3100541ABB /* BeepController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F311919363A3100541ABB /* en */,
+			);
+			name = BeepController.xib;
+			sourceTree = "<group>";
+		};
+		209F312719363D6500541ABB /* BuckTown.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F312819363D6500541ABB /* en */,
+			);
+			name = BuckTown.xib;
+			sourceTree = "<group>";
+		};
+		209F312919363D6D00541ABB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F312A19363D6D00541ABB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		209F31371936407B00541ABB /* CallTrak.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F31381936407B00541ABB /* en */,
+			);
+			name = CallTrak.xib;
+			sourceTree = "<group>";
+		};
+		209F31391936407B00541ABB /* Cash34Num.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F313A1936407B00541ABB /* en */,
+			);
+			name = Cash34Num.xib;
+			sourceTree = "<group>";
+		};
+		209F31491936435600541ABB /* OpenHouse.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F314A1936435600541ABB /* en */,
+			);
+			name = OpenHouse.xib;
+			sourceTree = "<group>";
+		};
+		209F314B1936435600541ABB /* OpenWorld.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F314C1936435600541ABB /* en */,
+			);
+			name = OpenWorld.xib;
+			sourceTree = "<group>";
+		};
+		209F314D1936435600541ABB /* RightThur.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209F314E1936435600541ABB /* en */,
+			);
+			name = RightThur.xib;
+			sourceTree = "<group>";
+		};
 		20D093E615ADCE6E00A1AC9E /* main.m */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -257,7 +470,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks,
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloBoston/HelloBoston-Prefix.pch";
@@ -283,7 +497,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks,
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloBoston/HelloBoston-Prefix.pch";
@@ -326,6 +541,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		209F312E19363E9700541ABB /* CallTrak.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				209F312F19363E9700541ABB /* CallTrak.xcdatamodel */,
+			);
+			currentVersion = 209F312F19363E9700541ABB /* CallTrak.xcdatamodel */;
+			path = CallTrak.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		209F313F1936425600541ABB /* OpenWorld.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				209F31401936425600541ABB /* OpenWorld.xcdatamodel */,
+			);
+			currentVersion = 209F31401936425600541ABB /* OpenWorld.xcdatamodel */;
+			path = OpenWorld.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 202793CA1598BA04005F551A /* Project object */;
 }

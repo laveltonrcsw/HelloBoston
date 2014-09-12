@@ -12,11 +12,11 @@
 #include "cuda_runtime.h"
 
 #ifdef __APPLE__
-    #include <OpenGL/gl.h>  // Open Graphics Library (OpenGL) header
-    #include <GLUT/glut.h>  // The GL Utility Toolkit (GLUT) Header
+#include <OpenGL/gl.h>  // Open Graphics Library (OpenGL) header
+#include <GLUT/glut.h>  // The GL Utility Toolkit (GLUT) Header
 #else
-    #include <GL/gl.h>      // Open Graphics Library (OpenGL) header
-    #include <GL/glut.h>    // The GL Utility Toolkit (GLUT) Header
+#include <GL/gl.h>      // Open Graphics Library (OpenGL) header
+#include <GL/glut.h>    // The GL Utility Toolkit (GLUT) Header
 #endif
 
 int main (int argc, const char * argv[])
@@ -150,7 +150,8 @@ int main (int argc, const char * argv[])
         NSPrint(@"ARCodes Count: %lu\n",[arcodes count]);
         for (id arcodesElement in arcodes)
         {
-            NSPrint(@"%@\n",[arcodes objectAtIndex:ival]);
+            NSPrint(@"%@\n", arcodesElement);
+            //NSPrint(@"%@\n",[arcodes objectAtIndex:ival]);
             ival+=1;
         }
 
@@ -171,7 +172,8 @@ int main (int argc, const char * argv[])
         NSPrint(@"Ascii Table Count: %lu\n",[asciitable count]);
         for (id asciitableElement in asciitable)
         {
-            NSPrint(@"%@\n",[asciitable objectAtIndex:ival]);
+            NSPrint(@"%@\n", asciitableElement);
+            //NSPrint(@"%@\n",[asciitable objectAtIndex:ival]);
             ival+=1;
         }
 
@@ -180,7 +182,8 @@ int main (int argc, const char * argv[])
         NSPrint(@"Hex Table Count: %lu\n",[hextable count]);
         for (id hextableElement in hextable)
         {
-            NSPrint(@"%@\n",[hextable objectAtIndex:ival]);
+            NSPrint(@"%@\n", hextableElement);
+            //NSPrint(@"%@\n",[hextable objectAtIndex:ival]);
             ival+=1;
         }
 
@@ -188,10 +191,98 @@ int main (int argc, const char * argv[])
         NSPrint(@"Round Labor Hours: %f\n",round(2.0f * 0.50) / 2.0f);
         NSPrint(@"Round Labor Hours: %d\n",lround(0.50));
 
+        //Fake MySQL Data Text
+        NSPrint(@"+-----------+-------------+------+-----+---------+----------------+\n");
+        NSPrint(@"| Field     | Type        | Null | Key | Default | Extra          |\n");
+        NSPrint(@"+-----------+-------------+------+-----+---------+----------------+\n");
+        NSPrint(@"| mth_no    | smallint(2) | NO   | PRI | NULL    | auto_increment |\n");
+        NSPrint(@"| mth_short | char(3)     | NO   |     | NULL    |                |\n");
+        NSPrint(@"| mth_long  | char(30)    | NO   |     | NULL    |                |\n");
+        NSPrint(@"+-----------+-------------+------+-----+---------+----------------+\n");
+        NSPrint(@"3 rows in set (0.02 sec)\n");
 
-        //OpenGL Test Sample
+        //Cable Test
+        printf("FOR LOOP\n");
+        for (ival = 0; ival < 10; ival++)
+        {
+            NSLog(@"ival is %li\n", (long)ival);
+        }
+
+        printf("DO WHILE LOOP\n");
+        ival = 0;
+        do
+        {
+            NSLog(@"ival was %li\n", (long)ival);
+            ival++;
+        }
+        while (ival < 10);
+
+        printf("IF STATEMENT\n");
+        ival = 0;
+        for (ival = 0; ival < 10; ival++)
+        {
+            if (ival < 10)
+            {
+                NSLog(@"ival could be %li\n", (long)ival);
+            }
+        }
+
+        printf("SWITCH STATEMENT\n");
+        ival = 0;
+        for (ival = 0; ival < 10; ival++)
+        {
+            switch (ival) {
+                case 2:
+                    NSLog(@"ival should be %li\n", (long)ival);
+                    break;
+                case 4:
+                    NSLog(@"ival should be %li\n", (long)ival);
+                    break;
+                case 6:
+                    NSLog(@"ival should be %li\n", (long)ival);
+                    break;
+                case 8:
+                    NSLog(@"ival should be %li\n", (long)ival);
+                    break;
+            }
+        }
+
+        // CUDA Framework Test
+        //        const int N = 16;
+        //        const int blocksize = 16;
+        //
+        //        char *ad;
+        //        int *bd;
+        //        const int csize = N*sizeof(char);
+        //        const int isize = N*sizeof(int);
+        //
+        //        cudaMalloc( (void**)&ad, csize );
+        //        cudaMalloc( (void**)&bd, isize );
+
+
+        //        FILE *f = fopen("file.txt", "w");
+        //        if (f == NULL)
+        //        {
+        //            printf("Error opening file!\n");
+        //            exit(1);
+        //        }
+        //
+        //        /* print some text */
+        //        const char *text = "Write this to the file";
+        //        fprintf(f, "Some text: %s\n", text);
+        //
+        //        /* print integers and floats */
+        //        int i = 1;
+        //        float py = 3.1415927;
+        //        fprintf(f, "Integer: %d, float: %f\n", i, py);
+        //        
+        //        /* printing single chatacters */
+        //        char c = 'A';
+        //        fprintf(f, "A character: %c\n", c);
+        //        
+        //        fclose(f);
         
-
+        
         //[myFraction release];
         //[myFrac1 release];
         //[myFrac2 release];
@@ -199,10 +290,3 @@ int main (int argc, const char * argv[])
     }
     return 0;
 }
-
-
-
-
-
-
-

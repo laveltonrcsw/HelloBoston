@@ -1,0 +1,92 @@
+﻿Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 1,000.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:17:08 AM (ET)
+Estimated Cost of Securities: $200.00
+Base Commission: $9.95
+Estimated Total Cost: $209.95
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 1,200.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:18:52 AM (ET)
+Estimated Cost of Securities: $240.00
+Base Commission: $9.95
+Estimated Total Cost: $249.95
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 1,400.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:18:52 AM (ET)
+Estimated Cost of Securities: $280.00
+Base Commission: $9.95
+Estimated Total Cost: $289.95
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 2,000.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:18:52 AM (ET)
+Estimated Cost of Securities: $400.00
+Base Commission: $9.95
+Estimated Large Order Surcharge: $0.05 How is this calculated?
+Estimated Total Cost: $410.00
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 3,000.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:26:56 AM (ET)
+Estimated Cost of Securities: $600.00
+Base Commission: $9.95
+Estimated Large Order Surcharge: $5.05 How is this calculated?
+Estimated Total Cost: $615.00
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 8,000.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:30:12 AM (ET)
+Estimated Cost of Securities: $1,600.00
+Base Commission: $9.95
+Estimated Large Order Surcharge: $30.05 How is this calculated?
+Estimated Total Cost: $1,640.00
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 11,000.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:30:12 AM (ET)
+Estimated Cost of Securities: $2,200.00
+Base Commission: $9.95
+Estimated Large Order Surcharge: $45.05 How is this calculated?
+Estimated Total Cost: $2,255.00
+
+Action: Buy
+Order Type: Market
+Symbol: NEXM
+Company Name: NEXMED INC
+# of Shares: 12,985.0000
+Real-time Quote: $0.2000
+Last Update: 09/10/09 10:31:16 AM (ET)
+Estimated Cost of Securities: $2,597.00
+Base Commission: $9.95
+Estimated Large Order Surcharge: $54.98 How is this calculated?
+Estimated Total Cost: $2,661.93
